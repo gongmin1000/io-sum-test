@@ -61,3 +61,6 @@ GTAGS
 
 # editor backup files etc.
 \#*\#
+
+#ctags index
+src/tags
