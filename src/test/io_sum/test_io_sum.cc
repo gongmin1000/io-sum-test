@@ -36,7 +36,7 @@ TEST(DrHello, Test01) {
   ioctx.write_full(obj_name,in);
 
   while(1){
-  	std::cout << "hello" << ioctx.get_instance_id() << std::endl;
+  	std::cout << "hello global = " << ioctx.get_instance_id() << std::endl;
 	ioctx.read(obj_name,out,obj_name.length(),0);
 	std::cout << "obj_name=" << out.to_str() << std::endl;
 	sleep(1);
